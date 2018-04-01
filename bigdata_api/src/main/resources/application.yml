@@ -1,0 +1,13 @@
+server:
+  port: 8889
+  context-path: /
+
+kafka:
+  producer:
+    servers: 172.172.172.2:9092
+    retries: 0
+    batch:
+      size: 1000000
+    linger: 1
+    buffer:
+      memory: 1000000
